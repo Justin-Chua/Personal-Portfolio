@@ -1,5 +1,7 @@
 /* Custom google font used for header buttons */
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+/* Used for general descriptions */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,5 +13,12 @@
         @apply relative cursor-pointer md:block after:block
         after:h-0.5 after:bg-yellow-100 after:w-full after:scale-x-0 
         after:hover:scale-x-100 after:transition after:duration-200 after:origin-center
+    }
+}
+
+@layer utilities {
+    /* Custom height offset to account for navbar */
+    .h-offset {
+        height: calc(100vh - 4rem);
     }
 }

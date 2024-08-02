@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        koulen: ['Koulen', 'sans-serif']
+        koulen: ["Koulen", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"]
       }
     },
   },
