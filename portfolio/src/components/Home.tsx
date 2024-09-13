@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import gradPhoto from "../resources/images/grad_photo.jpg";
-import welcomeMsg from  "../resources/images/welcome.png";
-import { introduction } from "../data/PortfolioData";
+import gradPhoto from "@/resources/images/grad_photo.jpg";
+import welcomeMsg from  "@/resources/images/welcome.png";
+import { introduction } from "@/data/PortfolioData";
 
 const Home = () => {
-    { /** Outermost div is a wrapper to ensure that all content fits within screen size */}
+    { /** Translate the wrapper downwards equal to the size of the nav */}
     return (
-        <div className="flex-none w-screen h-offset">
+        <div className="wrapper pt-16">
             <div className="flex items-center justify-center pt-12">
                 <Image src={ welcomeMsg } alt="Welcome" className="max-w-3xl"></Image>
             </div>
