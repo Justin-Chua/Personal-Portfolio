@@ -13,7 +13,7 @@ const Home = () => {
             </div>
             <div className="flex items-center justify-center gap-x-32 p-12">
                 <Image src={ gradPhoto } alt="graduation" className="max-w-md"></Image>
-                <p className="max-w-3xl font-poppins text-3xl font-normal text-balance leading-relaxed">{ introduction }</p>
+                <p className="max-w-3xl font-poppins text-3xl font-normal text-balance text-earth-grey leading-relaxed">{ introduction }</p>
             </div>
         </div>
     );

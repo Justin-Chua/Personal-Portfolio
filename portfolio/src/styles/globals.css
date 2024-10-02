@@ -11,12 +11,12 @@
     /* Underline animation referenced from https://www.youtube.com/watch?v=6jFFkGU-ZBU&t=1162s&ab_channel=WebDevWarriors */
     .nav-hover {
         @apply relative cursor-pointer md:block after:block
-        after:h-0.5 after:bg-yellow-100 after:w-full after:scale-x-0 
+        after:h-0.5 after:bg-earth-yellow-dark after:w-full after:scale-x-0 
         after:hover:scale-x-100 after:transition after:duration-200 after:origin-center
     }
     /* Wrapper container used across each section */
     .wrapper {
-        @apply flex-none w-screen h-offset 
+        @apply flex-none w-screen h-offset bg-earth-white
     }
 }
 
