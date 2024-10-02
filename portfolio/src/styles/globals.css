@@ -17,7 +17,7 @@
     }
     /* Wrapper container used across each section */
     .wrapper {
-        @apply flex-none w-screen h-offset bg-earth-white
+        @apply flex-none w-full h-offset bg-earth-white
     }
 }
 
