@@ -9,7 +9,8 @@ const Home = () => {
     return (
         <div className="wrapper pt-16">
             <div className="flex items-center justify-center pt-12">
-                <Image src={ welcomeMsg } alt="Welcome" className="max-w-3xl"></Image>
+                {/* <Image src={ welcomeMsg } alt="Welcome" className="max-w-3xl"></Image> */}
+                <p className="font-caladea text-6xl text-earth-grey">hey everyone! i'm justin :)</p>
             </div>
             <div className="flex items-center justify-center gap-x-32 p-12">
                 <Image src={ gradPhoto } alt="graduation" className="max-w-md"></Image>

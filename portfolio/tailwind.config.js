@@ -17,10 +17,11 @@ module.exports = {
       "earth-grey": "#333333",
       "earth-white": "#F4F4F4",
       "earth-yellow-dark": "#F7E890",
-      "earth-yellow-light": "#F9EFA5",
+      "earth-yellow-light": "#F9EFA5"
     },
     extend: {
       fontFamily: {
+        caladea: ["Caladea", "sans-serif"],
         koulen: ["Koulen", "sans-serif"],
         poppins: ["Poppins", "sans-serif"]
       },
