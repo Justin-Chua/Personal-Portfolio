@@ -1,35 +1,23 @@
 import React from "react";
-import SkillsCard from "@/components/SkillsCard";
 
-const Skills = () => {
+import SkillsCard from "@/components/SkillsCard";
+import { skillsItems } from "@/data/PortfolioData";
+
+const Skills: React.FC = () => {
     return (
-        <div className="wrapper pt-16">
+        <div id="skills-section" className="wrapper">
             <div className="flex flex-col gap-y-8 font-caladea text-6xl text-earth-grey items-center justify-center">
-                <div className="flex flex-col gap-y-4 items-center justify-center">
-                    <h1>languages</h1>
-                    <div className="flex gap-x-20">
-                        <SkillsCard></SkillsCard>
-                        <SkillsCard></SkillsCard>
-                        <SkillsCard></SkillsCard>
-                        <SkillsCard></SkillsCard>
-                        <SkillsCard></SkillsCard>
-                        <SkillsCard></SkillsCard>
+                { skillsItems.map((item) => (
+                    <div className="flex flex-col gap-y-4 items-center justify-center">
+                        <h1>{ item.category }</h1>
+                        <div className="flex gap-x-20">
+                            { item.technologies.map((technology) => (
+                                <SkillsCard name={ technology.name } src={ technology.src }></SkillsCard>
+                            ))
+                            }
+                        </div>
                     </div>
-                </div>
-                <div className="flex flex-col gap-y-4 items-center justify-center">
-                    <h1>frameworks</h1>
-                    <div className="flex gap-x-20">
-                        <SkillsCard></SkillsCard>
-                        <SkillsCard></SkillsCard>
-                    </div>
-                </div>
-                <div className="flex flex-col gap-y-4 items-center justify-center">
-                    <h1>dev tools</h1>
-                    <div className="flex gap-x-20">
-                        <SkillsCard></SkillsCard>
-                        <SkillsCard></SkillsCard>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );

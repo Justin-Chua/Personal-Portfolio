@@ -1,19 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import gradPhoto from "@/resources/images/grad_photo.jpg";
-import welcomeMsg from  "@/resources/images/welcome.png";
+
 import { introduction } from "@/data/PortfolioData";
 
-const Home = () => {
+const Home: React.FC = () => {
     { /** Translate the wrapper downwards equal to the size of the nav */}
     return (
-        <div className="wrapper pt-16">
+        <div id="home-section" className="wrapper">
             <div className="flex items-center justify-center pt-12">
-                {/* <Image src={ welcomeMsg } alt="Welcome" className="max-w-3xl"></Image> */}
                 <p className="font-caladea text-6xl text-earth-grey">hey everyone! i'm justin :)</p>
             </div>
             <div className="flex items-center justify-center gap-x-32 p-12">
-                <Image src={ gradPhoto } alt="graduation" className="max-w-md"></Image>
+                <Image src="/resources/images/grad_photo.jpg" height={ 0 } width={ 450 } alt="grad"/>
                 <p className="max-w-3xl font-poppins text-3xl font-normal text-balance text-earth-grey leading-relaxed">{ introduction }</p>
             </div>
         </div>
