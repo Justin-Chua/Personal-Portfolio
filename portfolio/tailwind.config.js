@@ -10,7 +10,8 @@ module.exports = {
   ],
   theme: {
     colors: {
-      "earth-beige": "#DDCBB7",
+      "earth-beige-dark": "#DDCBB7",
+      "earth-beige-light": "#E1D8B3",
       "earth-brown-dark": "#7B4B36",
       "earth-brown-light": "#8E5D44",
       "earth-green": "#325D41",

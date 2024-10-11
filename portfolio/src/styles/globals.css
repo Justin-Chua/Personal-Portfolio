@@ -25,6 +25,10 @@
     .wrapper {
         @apply flex-none w-full h-offset pt-16 bg-earth-white
     }
+    /* Fade transition animation for the about section */
+    .transition-fade {
+        @apply transition-opacity duration-700 ease-in-out
+    }
 }
 
 @layer utilities {
