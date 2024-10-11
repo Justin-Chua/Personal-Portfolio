@@ -30,7 +30,7 @@ const About: React.FC = () => {
 
     return (
         <div id="about-section" className="wrapper">
-            <div className="flex gap-x-4 flex-row pt-12 pl-32">
+            <div className="flex gap-x-4 flex-row p-12 pl-32">
                 <p className="font-caladea text-8xl text-earth-grey">i love...</p>
                 <div className="font-caladea text-8xl text-earth-grey">
                     <Typewriter
@@ -42,7 +42,7 @@ const About: React.FC = () => {
                     />
                  </div>
             </div>
-            <div className="flex gap-x-16 p-16 m-12 rounded-3xl shadow-lg 
+            <div className="flex gap-x-16 p-16 mx-16 rounded-3xl shadow-lg 
                 border-4 border-earth-beige-light bg-earth-beige-dark items-center justify-between">
                 <pre className={ `font-poppins text-xl font-normal text-wrap text-earth-grey leading-[1.7]
                     transition-fade ${ fade ? "opacity-0" : "opacity-100" }` }>

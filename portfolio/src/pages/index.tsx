@@ -2,7 +2,8 @@ import NavBar from "@/components/NavBar";
 import Home from "@/components/Home";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
-import React, { useState } from "react";
+import Resume from "@/components/Resume";
+import React from "react";
 
 const Page = () => {
   return (
@@ -11,6 +12,7 @@ const Page = () => {
       <Home></Home>
       <About></About>
       <Skills></Skills>
+      <Resume></Resume>
     </div>
   )
 };

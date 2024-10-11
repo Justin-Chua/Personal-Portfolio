@@ -6,7 +6,7 @@ import { skillsItems } from "@/data/PortfolioData";
 const Skills: React.FC = () => {
     return (
         <div id="skills-section" className="wrapper">
-            <div className="flex flex-col gap-y-8 font-caladea text-6xl text-earth-grey items-center justify-center">
+            <div className="flex flex-col gap-y-8 pt-12 font-caladea text-6xl text-earth-grey items-center justify-center">
                 { skillsItems.map((item) => (
                     <div className="flex flex-col gap-y-4 items-center justify-center">
                         <h1>{ item.category }</h1>
