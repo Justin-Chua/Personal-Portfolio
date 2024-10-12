@@ -11,7 +11,7 @@ export const navItems: { label: string ; href: string }[] = [
     { label: "about", href: "#about-section" },
     { label: "skills", href: "#skills-section" },
     { label: "projects", href: "#" },
-    { label: "resume", href: "#" },
+    { label: "resume", href: "#resume-section" },
     { label: "contact", href: "#" }
 ];
 
@@ -131,5 +131,49 @@ export const skillsItems: { category: string ; technologies: { name: string ; sr
             { name: "MySQL", src: `${ ICON_PATH }/tools/mysql_logo.png` },
             { name: "Docker", src: `${ ICON_PATH }/tools/docker_logo.png` }
         ]
+    }
+];
+
+export const resumeItems: { type: string, title: string, company: string, location: string, date: string, description?: string }[] = [
+    {
+        type: "education",
+        title: "Bachelor of Science in Computer Science",
+        company: "University of Calgary",
+        location: "Calgary, AB",
+        date: "June 2024"
+    },
+    {
+        type: "work",
+        title: "Meat Clerk",
+        company: "Sobeys Inc.",
+        location: "Calgary, AB",
+        date: "June 2023 - January 2024",
+        description: `
+            Provided exceptional customer service at the service case, managed inventory \ 
+            of meat products, and efficiently handled department closing procedures.
+        `
+    },
+    {
+        type: "work",
+        title: "Barista",
+        company: "Snowcapz Cafe",
+        location: "Calgary, AB",
+        date: "May 2022 - August 2022",
+        description: `
+            Prepared high-quality desserts and baked goods with meticulous attention to detail. \
+            Consistently adapted to evolving work procedures and the addition of new menu items.
+        `
+    },
+    {
+        type: "work",
+        title: "Crew Member",
+        company: "Tim Hortons",
+        location: "Lethbridge, AB",
+        date: "July 2018 - August 2019",
+        description: `
+            Successfully processed orders at both the drive-thru and counter in a fast-paced, \
+            team-oriented environment. Leveraged strong communication and collaboration skills \
+            to ensure smooth operations while maintaining efficiency.
+        `
     }
 ];
