@@ -29,7 +29,7 @@ const About: React.FC = () => {
     }, []);
 
     return (
-        <div id="about-section" className="wrapper">
+        <div id="about" className="wrapper">
             <div className="flex gap-x-4 flex-row p-12 pl-32">
                 <p className="font-caladea text-8xl text-earth-grey">i love...</p>
                 <div className="font-caladea text-8xl text-earth-grey">

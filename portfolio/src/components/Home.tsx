@@ -6,7 +6,7 @@ import { introduction } from "@/data/PortfolioData";
 const Home: React.FC = () => {
     { /** Translate the wrapper downwards equal to the size of the nav */}
     return (
-        <div id="home-section" className="wrapper">
+        <div id="home" className="wrapper">
             <div className="flex p-12 items-center justify-center">
                 <p className="font-caladea text-6xl text-earth-grey">hey everyone! i'm justin :)</p>
             </div>

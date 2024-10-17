@@ -33,7 +33,7 @@
 
 @layer utilities {
     /* Custom height offset to account for navbar */
-    .h-offset {
+    .w-offset {
         height: calc(100vh - 4rem);
     }
 }

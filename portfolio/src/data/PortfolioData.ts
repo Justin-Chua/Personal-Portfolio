@@ -7,12 +7,12 @@ export const introduction: string = `
 
 // Items with a href marked as '#' have not been completed
 export const navItems: { label: string ; href: string }[] = [
-    { label: "home", href: "#home-section" },
-    { label: "about", href: "#about-section" },
-    { label: "skills", href: "#skills-section" },
-    { label: "projects", href: "#" },
-    { label: "resume", href: "#resume-section" },
-    { label: "contact", href: "#" }
+    { label: "home", href: "#home" },
+    { label: "about", href: "#about" },
+    { label: "skills", href: "#skills" },
+    { label: "projects", href: "#projects" },
+    { label: "resume", href: "#resume" },
+    { label: "contact", href: "#contact" }
 ];
 
 export const ABOUT_PATH = "/resources/about"

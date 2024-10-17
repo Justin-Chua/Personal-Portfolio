@@ -8,7 +8,7 @@ import { resumeItems } from "@/data/PortfolioData";
 const Resume: React.FC = () => {
 
     return (
-        <div id="resume-section" className="wrapper">
+        <div id="resume" className="wrapper">
             <div className="flex flex-col gap-y-4 p-12 items-center justify-center">
                 <h3 className="font-caladea text-6xl text-earth-grey">education & experience</h3>
                 <VerticalTimeline lineColor="#E4D9B6">
