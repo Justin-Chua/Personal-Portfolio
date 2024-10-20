@@ -10,7 +10,7 @@ const Skills: React.FC = () => {
                 { skillsItems.map((item) => (
                     <div className="flex flex-col gap-y-6 items-center justify-center">
                         <h1 className="font-caladea text-6xl text-earth-grey">{ item.category }</h1>
-                        <div className="flex gap-x-20">
+                        <div className="flex flex-wrap gap-12 items-center justify-center">
                             { item.technologies.map((technology) => (
                                 <SkillsCard name={ technology.name } src={ technology.src }></SkillsCard>
                             ))

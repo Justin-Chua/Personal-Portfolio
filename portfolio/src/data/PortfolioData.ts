@@ -177,3 +177,10 @@ export const resumeItems: { type: string, title: string, company: string, locati
         `
     }
 ];
+
+export type FormData = {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+};
