@@ -26,6 +26,9 @@ module.exports = {
         koulen: ["Koulen", "sans-serif"],
         poppins: ["Poppins", "sans-serif"]
       },
+      backgroundImage: {
+        "minimalist-home": "linear-gradient(to bottom, transparent, rgba(244, 244, 244, 1)), url('/resources/images/minimalist_home_bg.jpg')"
+      }
     },
   },
   plugins: [],

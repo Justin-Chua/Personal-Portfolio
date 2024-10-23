@@ -23,7 +23,7 @@
     }
     /* Wrapper container used across each section */
     .wrapper {
-        @apply flex-none w-full min-h-screen pt-16 bg-earth-white
+        @apply w-full min-h-screen pt-16 bg-earth-white
     }
     /* Fade transition animation for the about section */
     .transition-fade {

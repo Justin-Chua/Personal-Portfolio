@@ -29,7 +29,7 @@ const ProjectsCard: React.FC = () => {
                 <a className="bg-earth-white p-3 w-1/2 rounded-full font-poppins font-medium text-lg text-earth-grey text-center"
                     href="https://www.google.ca">
                         <GitHub className="text-earth-grey mr-2"></GitHub>
-                        code
+                        repository
                 </a>
                 <a className="bg-earth-grey p-3 w-1/2 rounded-full font-poppins font-medium text-lg text-earth-white text-center"
                     href="https://www.google.ca">
