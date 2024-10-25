@@ -11,8 +11,8 @@ const Header: React.FC<{ text: string }> = ({ text }) => {
 
     return (
         <h1 ref={ ref }
-        className={ `font-caladea text-6xl font-bold text-center text-earth-grey hidden md:block
-        ${ inView ? "transition-all duration-500 ease-out opacity-100 translate-y-[0px]" 
+        className={ `font-caladea text-6xl font-bold text-center text-earth-grey
+        ${ inView ? "slide-y" 
         : "opacity-0 translate-y-[50px]" }` }>
         { text }
         </h1>    

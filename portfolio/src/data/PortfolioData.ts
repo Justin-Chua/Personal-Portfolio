@@ -20,81 +20,53 @@ export const ABOUT_PATH = "/resources/about"
 export const aboutItems: { src: string ; description: string }[] = [
     {
         src: `${ ABOUT_PATH }/programming.jpg`,
-        description: `
-Funny enough, I had no idea that programming would be for me going into university. \
-I actually started off in engineering, and after my first year, I felt uncertain about the \
-program and whether it was the right fit. None of the courses I took really blew me away \
-- except for an introductory coding class. This peaked my interest in learning more about programming \
-and the various types of programs you can create. Because of this, I made the decision to switch \
-to Computer Science in my second year, and haven't looked back since!
-
-Enjoy a picture of the first project I ever made, which was a bar graph visualization of \
-weather data in Calgary. The code is horrendous but at least the UI looks decent!
-        `
-    },
-    {
-        src: `${ ABOUT_PATH }/chichen_itza.jpg`,
-        description: `
-I'm a lifelong learner by nature, which happens to be the same reason I love travelling so much! \
-Learning about and embracing other cultures around the world has always intrigued me. Whether \
-it's diving into local cuisine, visiting historical landmarks, or simply just strolling through \
-the city to admire the architecture. I enjoy discovering what the world has to offer \
-and how we've evolved into modern society.
-
-To the left is a picture of the iconic pyramid at Chichén Itzá, which I took during my trip \
-to Mexico in Summer 2023. One of my lifetime goals is to check off all of the New 7 Wonders \
-of the World from my travelling bucket list!
-        `
+        description: "My journey into programming began in my first year of university, \
+        with an introductory course in Java that introduced me to fundamental programming concepts. \
+        Since then, I've had to the opportunity to complete my degree in Computer Science, and \
+        develop a strong interest in full-stack web development and data visualization. Discovering \
+        and mastering new programming concepts fuels my enthusiasm to grow professionally as a developer!"
     },
     {
         src: `${ ABOUT_PATH }/family.jpg`,
-        description: `
-Nothing means more to me on this world than my family. As cliché as it might \
-sound, I wouldn't be where I am today without them. They've always been \
-a shoulder I can lean on for support and guidance, granting me strength during times \
-where I've felt ready to give up. The experiences I've shared with them growing up \
-have shaped me in ways that continue to resonate through the actions I take \
-in my everyday life.
-
-If you ever catch me out in public, chances are I'll be hanging out with a family member \
-- 9 times out of 10!
-        `
+        description: "Like many others, nothing means more to me in this world than my family. \
+        I can confidently say that I wouldn't be where I am today without their unwavering support. \
+        The compassion and wisdom they imparted to me growing up has shaped me in ways that continue \
+        to resonate through my daily actions. This influence drives me to be the best teammate that I \
+        can be in a professional setting, and treat my peers with the same level of respect and \
+        kindness that I receive from my family."
     },
     {
         src: `${ ABOUT_PATH }/zipline.jpg`,
-        description: `
-Growing up as a gamer, I didn't have the incentive to go outside that much... \
-But as an adult, I've grown to acknowledge the amount of benefit outdoor activity \
-can yield beyond the physical. I feel that the moments we spend connecting with nature \
-helps us so much in growing spiritually and mentally.
-
-To the left is a picture of me during a zipline adventure last summer in Mexico. \
-It was extremely exhilirating, but also extremely exhausting! We had to hike up a large \
-hill to reach the tallest zipline at 800 feet!
-        `
+        description: "I'm a lifelong learner by nature, which incidentally makes me a fanatic for \
+        travelling! It truly is a blessing to be able to learn about and embrace other cultures \
+        around the world. Whether it's participating in local festivities, visiting historical \
+        landmarks, or simply strolling through the city to admire the architecture. I enjoy discovering \
+        what the world has to offer and how we've progressed into modern society."
+    },
+    {
+        src: `${ ABOUT_PATH }/rockets.jpg`,
+        description: "I don't play basketball much myself, but I've always been an enthusiastic \
+        NBA fan. Besides the game, one aspect that has always stood out to me is the unique player \
+        and team statistics displayed throughout, along with the creative visualizations that accompany \
+        them. Also, for those curious, I'm a big time Houston Rockets fan. I'm hoping that Sengun is an \
+        All-Star this year and we make the play-in tournament!"
     },
     {
         src: `${ ABOUT_PATH }/witcher.jpg`,
-        description: `
-Video games have been involved in my life for as long as I can remember. \
-My first time ever picking up a controller was back when I was four years old, \
-for Gran Turismo 2 on the Playstation 1. Since then, I've had the chance to \
-dive into a number of game genres, ranging from open-world singleplayer games, \
-all the way to competitive multiplayer games. 
-
-To this day, my favorite game of all time has to be The Witcher 3. The story, \
-the characters, the soundtrack, the graphics - everything about it is just \
-a masterpiece.
-        `
+        description: "Video games have been a significant part of my life for as long as I can remember. \
+        My favorite genre has to be single player, open-world RPGs that feature intricate world design, \
+        deep lore and complex puzzles. Some of my top picks include The Witcher 3, the Uncharted series \
+        and Horizon series. While I primarily play for enjoyment, I feel that video games inadvertently \
+        influence my problem solving abilities and foster my natural curiosity."
     }
 ];
 
 // An array of the names used in aboutItems, to be used for typewriter
 export const aboutNames: string[] = [
     "programming",
-    "travelling",
     "family",
-    "the outdoors",
+    "travelling",
+    "nba",
     "video games"
 ]
 

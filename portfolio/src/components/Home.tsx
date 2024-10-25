@@ -22,15 +22,15 @@ const Home: React.FC = () => {
                 <div className="flex flex-wrap items-center justify-center gap-y-4 gap-x-32">
                     <Image ref={ ref }
                         src="/resources/images/grad_photo.jpg" height={ 0 } width={ 300 } alt="Graduation photo"
-                        className={ `border-[25px] border-b-[75px] border-earth-white md:w-[450px]
-                        ${ inView ? "transition-all duration-700 ease-out delay-150 opacity-100 translate-x-[0px]" 
-                        : "opacity-0 translate-x-[-50px]" }` }/>
+                        className={ `border-[25px] border-earth-white md:w-[450px]
+                        ${ inView ? "slide-x" 
+                        : "opacity-0 translate-x-[-100px]" }` }/>
                     <div ref={ ref }
                         className={ `flex flex-col items-center justify-center gap-y-2
-                        ${ inView ? "transition-all duration-700 ease-out delay-150 opacity-100 translate-x-[0px]"
-                        : "opacity-0 translate-x-[50px]" }` }>
+                        ${ inView ? "slide-x"
+                        : "opacity-0 translate-x-[100px]" }` }>
                         <p className="max-w-3xl p-8 md:p-4 font-poppins text-xl md:text-3xl font-normal text-center 
-                        text-earth-grey leading-relaxed md:leading-[1.7]">
+                        text-earth-grey leading-relaxed md:leading-loose">
                             { introduction }
                         </p>
                         <Link href="#about">
