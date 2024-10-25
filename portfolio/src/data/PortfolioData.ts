@@ -5,8 +5,13 @@ export const introduction: string = `
     To find out more about me, feel free to keep scrolling down!
     `;
 
+interface navItem {
+    label: string;
+    href: string;
+}
+
 // Items with a href marked as '#' have not been completed
-export const navItems: { label: string ; href: string }[] = [
+export const navItems: navItem[] = [
     { label: "home", href: "#home" },
     { label: "about", href: "#about" },
     { label: "skills", href: "#skills" },
@@ -15,64 +20,86 @@ export const navItems: { label: string ; href: string }[] = [
     { label: "contact", href: "#contact" }
 ];
 
-export const ABOUT_PATH = "/resources/about"
+interface aboutItem {
+    topic: string;
+    src: string;
+    description: string;
+};
 
-export const aboutItems: { src: string ; description: string }[] = [
-    {
+const ABOUT_PATH = "/resources/about";
+
+export const aboutItems: aboutItem[] = [
+    {   
+        topic: "programming",
         src: `${ ABOUT_PATH }/programming.jpg`,
-        description: "My journey into programming began in my first year of university, \
-        with an introductory course in Java that introduced me to fundamental programming concepts. \
-        Since then, I've had to the opportunity to complete my degree in Computer Science, and \
-        develop a strong interest in full-stack web development and data visualization. Discovering \
-        and mastering new programming concepts fuels my enthusiasm to grow professionally as a developer!"
+        description: `
+            My journey into programming began in my first year of university, \
+            with an introductory course in Java that introduced me to fundamental programming concepts. \
+            Since then, I've had to the opportunity to complete my degree in Computer Science, and \
+            develop a strong interest in full-stack web development and data visualization. Discovering \
+            and mastering new programming concepts fuels my enthusiasm to grow professionally as a developer!
+            `
     },
-    {
+    {   
+        topic: "family",
         src: `${ ABOUT_PATH }/family.jpg`,
-        description: "Like many others, nothing means more to me in this world than my family. \
-        I can confidently say that I wouldn't be where I am today without their unwavering support. \
-        The compassion and wisdom they imparted to me growing up has shaped me in ways that continue \
-        to resonate through my daily actions. This influence drives me to be the best teammate that I \
-        can be in a professional setting, and treat my peers with the same level of respect and \
-        kindness that I receive from my family."
+        description: `
+            Like many others, nothing means more to me in this world than my family. \
+            I can confidently say that I wouldn't be where I am today without their unwavering support. \
+            The compassion and wisdom they imparted to me growing up has shaped me in ways that continue \
+            to resonate through my daily actions. This influence drives me to be the best teammate that I \
+            can be in a professional setting, and treat my peers with the same level of respect and \
+            kindness that I receive from my family.
+            `
     },
     {
+        topic: "travelling",
         src: `${ ABOUT_PATH }/zipline.jpg`,
-        description: "I'm a lifelong learner by nature, which incidentally makes me a fanatic for \
-        travelling! It truly is a blessing to be able to learn about and embrace other cultures \
-        around the world. Whether it's participating in local festivities, visiting historical \
-        landmarks, or simply strolling through the city to admire the architecture. I enjoy discovering \
-        what the world has to offer and how we've progressed into modern society."
+        description: `
+            I'm a lifelong learner by nature, which incidentally makes me a fanatic for \
+            travelling! It truly is a blessing to be able to learn about and embrace other cultures \
+            around the world. Whether it's participating in local festivities, visiting historical \
+            landmarks, or simply strolling through the city to admire the architecture. I enjoy discovering \
+            what the world has to offer and how we've progressed into modern society.
+            `
     },
     {
+        topic: "nba fan",
         src: `${ ABOUT_PATH }/rockets.jpg`,
-        description: "I don't play basketball much myself, but I've always been an enthusiastic \
-        NBA fan. Besides the game, one aspect that has always stood out to me is the unique player \
-        and team statistics displayed throughout, along with the creative visualizations that accompany \
-        them. Also, for those curious, I'm a big time Houston Rockets fan. I'm hoping that Sengun is an \
-        All-Star this year and we make the play-in tournament!"
+        description: `
+            I don't play basketball much myself, but I've always been an enthusiastic \
+            NBA fan. Besides the game, one aspect that has always stood out to me is the unique player \
+            and team statistics displayed throughout, along with the creative visualizations that accompany \
+            them. Also, for those curious, I'm a big time Houston Rockets fan. I'm hoping that Sengun is an \
+            All-Star this year and we make the play-in tournament!
+            `
     },
     {
+        topic: "video games",
         src: `${ ABOUT_PATH }/witcher.jpg`,
-        description: "Video games have been a significant part of my life for as long as I can remember. \
-        My favorite genre has to be single player, open-world RPGs that feature intricate world design, \
-        deep lore and complex puzzles. Some of my top picks include The Witcher 3, the Uncharted series \
-        and Horizon series. While I primarily play for enjoyment, I feel that video games inadvertently \
-        influence my problem solving abilities and foster my natural curiosity."
+        description: `
+            Video games have been a significant part of my life for as long as I can remember. \
+            My favorite genre has to be single player, open-world RPGs that feature intricate world design, \
+            deep lore and complex puzzles. Some of my top picks include The Witcher 3, the Uncharted series \
+            and Horizon series. While I primarily play for enjoyment, I feel that video games inadvertently \
+            influence my problem solving abilities and foster my natural curiosity.
+            `
     }
 ];
 
-// An array of the names used in aboutItems, to be used for typewriter
-export const aboutNames: string[] = [
-    "programming",
-    "family",
-    "travelling",
-    "nba",
-    "video games"
-]
+interface Technology {
+    name: string;
+    src: string;
+}
+
+interface skillItem {
+    category: string;
+    technologies: Technology[];
+}
 
 const ICON_PATH = "/resources/icons";
 
-export const skillsItems: { category: string ; technologies: { name: string ; src: string }[] }[] = [
+export const skillsItems: skillItem[] = [
     {   
         category: "languages", 
         technologies: [
@@ -106,7 +133,16 @@ export const skillsItems: { category: string ; technologies: { name: string ; sr
     }
 ];
 
-export const resumeItems: { type: string, title: string, company: string, location: string, date: string, description?: string }[] = [
+interface resumeItem {
+    type: string;
+    title: string;
+    company: string;
+    location: string;
+    date: string;
+    description?: string;
+}
+
+export const resumeItems: resumeItem[] = [
     {
         type: "education",
         title: "Bachelor of Science in Computer Science",
@@ -123,7 +159,7 @@ export const resumeItems: { type: string, title: string, company: string, locati
         description: `
             Provided exceptional customer service at the service case, managed inventory \ 
             of meat products, and efficiently handled department closing procedures.
-        `
+            `
     },
     {
         type: "work",
@@ -134,7 +170,7 @@ export const resumeItems: { type: string, title: string, company: string, locati
         description: `
             Prepared high-quality desserts and baked goods with meticulous attention to detail. \
             Consistently adapted to evolving work procedures and the addition of new menu items.
-        `
+            `
     },
     {
         type: "work",
@@ -146,10 +182,109 @@ export const resumeItems: { type: string, title: string, company: string, locati
             Successfully processed orders at both the drive-thru and counter in a fast-paced, \
             team-oriented environment. Leveraged strong communication and collaboration skills \
             to ensure smooth operations while maintaining efficiency.
-        `
+            `
     }
 ];
 
+interface projectItem {
+    type: string;
+    name: string;
+    src: string;
+    description: string;
+    repoLink?: string;
+    demoLink?: string;
+    tags: string[];
+}
+
+const PROJECT_PATH = "/resources/projects";
+
+export const projectItems: projectItem[] = [
+    {
+        type: "full stack web application",
+        name: "ucalgary parking app",
+        src: `${ PROJECT_PATH }/ucalgary_parking.png`,
+        description: `
+            A proof-of-concept web application, aimed at transforming UCalgary's parking system by \ 
+            unifying them into one application. Users can easily manage \
+            parking tickets, parking permits and our innovative parking reservation feature. \
+            Administrative users can issue tickets, notifications, and revoke permits.
+            `,
+        repoLink: "https://github.com/Justin-Chua/UCalgary-Parking-Application",
+        tags: [
+            "Python",
+            "JavaScript",
+            "CSS3",
+            "Django",
+            "React.js",
+            "Bootstrap",
+            "Git",
+            "MySQL"
+        ]
+    },
+    {
+        type: "full stack web application",
+        name: "make mobile great again",
+        src: `${ PROJECT_PATH }/mmga.png`,
+        description: `
+            A web application designed for indie mobile game developers to showcase early versions of \
+            their games, connect with gamers, and grow their community. Users can explore and view a \
+            diverse variety of games, add their own games, add friends, and participate in discussions.
+            `,
+        repoLink: "https://github.com/Justin-Chua/MMGA",
+        tags: [
+            "JavaScript",
+            "CSS3",
+            "Vue.js",
+            "Node.js",
+            "Git",
+            "MySQL",
+            "Docker"
+        ]
+    },
+    {
+        type: "front-end mobile application",
+        name: "cooking buddy",
+        src: `${ PROJECT_PATH }/cooking_buddy.png`,
+        description: `
+            A front-end web application crafted as an intuitive platform for recipe learning and sharing. \
+            The application prioritizes accessibility, envisioning features such as personalized recipe recommendations, \
+            comprehensive recipe pages, ingredient substitutions, recipe sharing, user feedback, and notifications.
+            `,
+        repoLink: "https://github.com/Justin-Chua/Cooking-Buddy",
+        tags: [
+            "C#",
+            "HTML5",
+            "CSS3",
+            "Blazor",
+            ".NET"
+        ]
+    },
+    {
+        type: "full stack web application (in progress)",
+        name: "nba trade finder",
+        src: `${ PROJECT_PATH }/trade_finder.png`,
+        description: `
+            A web application designed to replicate the NBA Trade Finder feature in NBA 2K video games. \
+            NBA enthusiasts are able to simulate trades involving their favorite teams and players, \
+            complete with constraints akin to the official regulations in the NBA.
+            `,
+        tags: [
+            "Python",
+            "TypeScript",
+            "Django",
+            "Next.js",
+            "ChakraUI",
+            "Git",
+            "MongoDB"
+        ]
+        
+    }
+]
+//
+//
+// DELETE THIS LATER
+//
+//
 export type FormData = {
     name: string;
     email: string;

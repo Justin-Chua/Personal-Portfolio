@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
         <nav className="flex fixed bg-earth-green bg-opacity-95 px-10 w-full h-16 z-[999] items-center justify-between">
             <div className="flex-none">
                 <Link href="#home">
-                    <Image src="/resources/images/signature.png" height={ 0 } width={ 200 } alt="Justin Chua's signature"/>
+                    <Image src="/resources/home/signature.png" height={ 0 } width={ 200 } alt="Justin Chua's signature"/>
                 </Link>
             </div>
             <div className="flex gap-10 font-caladea font-bold text-4xl text-earth-white">

@@ -1,41 +1,66 @@
 import React from "react";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 
 import { GitHub, OpenInNew } from "@mui/icons-material";
 import Chip from "@/components/Chip";
 
-const ProjectsCard: React.FC = () => {
+const ProjectsCard: React.FC<{ type: string; name: string; src: string; description: string; repoLink?: string; demoLink?: string; tags: string[]; index: number; }> 
+= ({ type, name, src, description, repoLink, demoLink, tags, index }) => {
+
+    const { ref, inView } = useInView({
+        threshold: 0.35,
+        rootMargin: `-${ 64 + 48 }px 0px 0px 0px`,
+        triggerOnce: true
+    });
+
     return (
-        <div className="flex flex-col gap-y-4 p-6 w-[450px] h-[650px] rounded-2xl bg-earth-beige-dark border-4 border-earth-beige-light">
-            <div className="flex items-center justify-center">
-                <Image src="/resources/about/witcher.jpg" height={ 0 } width={ 400 } alt="soul train"/>
-            </div>
+        <div ref={ ref }
+            style={{ transitionDelay: `${ 150 * index }ms` }}
+            className={ `flex flex-col gap-y-4 p-6 w-[450px] h-[650px] rounded-2xl bg-earth-beige-dark border-4 border-earth-beige-light justify-between
+            ${ inView ? "slide-y" : "opacity-0 translate-y-[100px]" }` }>
+            <Image src={ src } height={ 0 } width={ 400 } alt={ `${ name } logo` }/>
             <div className="flex flex-col items-start justify-start">
-                <h3 className="font-caladea font-normal italic text-xl text-earth-green">full stack web application</h3>
-                <h2 className="font-caladea font-bold text-3xl text-earth-grey">make mobile great again</h2>
+                <h3 className="font-caladea font-normal italic text-xl text-earth-green">{ type }</h3>
+                <h2 className="font-caladea font-bold text-3xl text-earth-grey">{ name }</h2>
             </div>
-            <p className="font-poppins font-normal text-sm leading-[1.7] text-earth-grey">a web application designed for indie mobile game developers 
-                to showcase early versions of their games, connect with gamers, and grow their community. users can explore and view a diverse
-                variety of games, stay updated with recent gaming news, add friends, and actively participate in discussions.</p>
+            <p className="font-poppins font-normal text-sm leading-[1.7] text-earth-grey">
+                { description }
+            </p>
             <div className="flex flex-wrap gap-1 items-start justify-start">
-                <Chip technology="Python"></Chip>
-                <Chip technology="JavaScript"></Chip>
-                <Chip technology="Django"></Chip>
-                <Chip technology="React.js"></Chip>
-                <Chip technology="MySQL"></Chip>
-                <Chip technology="Bootstrap"></Chip>
+                { tags.map((tag) => (
+                    <Chip technology={ tag }></Chip>
+                ))}
             </div>
             <div className="flex flex-row gap-4 items-center justify-between">
-                <a className="bg-earth-white p-3 w-1/2 rounded-full font-poppins font-medium text-lg text-earth-grey text-center"
-                    href="https://www.google.ca">
-                        <GitHub className="text-earth-grey mr-2"></GitHub>
+                { repoLink !== undefined ? (
+                    <a className="project-link bg-earth-yellow-light text-earth-brown-light
+                        hover:bg-earth-yellow-dark hover:text-earth-brown-dark active:scale-95"
+                        href={ repoLink }>
+                        <GitHub className="mr-2"></GitHub>
                         repository
-                </a>
-                <a className="bg-earth-grey p-3 w-1/2 rounded-full font-poppins font-medium text-lg text-earth-white text-center"
-                    href="https://www.google.ca">
-                        <OpenInNew className="text-earth-white mr-2"></OpenInNew>
+                    </a>
+                ) : (
+                    <button disabled
+                        className="project-link bg-earth-yellow-light text-earth-brown-light brightness-50">
+                        <GitHub className="mr-2"></GitHub>
+                        repository
+                    </button>                    
+                )}
+                { demoLink !== undefined ? (
+                    <a className="project-link bg-earth-brown-light text-earth-yellow-light
+                        hover:bg-earth-brown-dark hover:text-earth-yellow-dark active:scale-95"
+                    href={ demoLink }>
+                        <OpenInNew className="mr-2"></OpenInNew>
                         live demo
-                </a>
+                    </a>
+                ) : (
+                    <button disabled
+                        className="project-link bg-earth-brown-light text-earth-yellow-light brightness-50">
+                        <OpenInNew className="mr-2"></OpenInNew>
+                        live demo
+                    </button>
+                )}
             </div>
         </div>
     );

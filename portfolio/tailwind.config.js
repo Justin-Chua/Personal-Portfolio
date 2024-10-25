@@ -27,7 +27,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"]
       },
       backgroundImage: {
-        "minimalist-home": "linear-gradient(to bottom, transparent, rgba(244, 244, 244, 0.5)), url('/resources/images/minimalist_home_bg.jpg')"
+        "minimalist-home": "linear-gradient(to bottom, transparent, rgba(244, 244, 244, 0.5)), url('/resources/home/minimalist_home_bg.jpg')"
       }
     },
   },

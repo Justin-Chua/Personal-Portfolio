@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
-import { aboutNames, aboutItems } from "@/data/PortfolioData";
+import { aboutItems } from "@/data/PortfolioData";
 import Header from "@/components/Header";
 
 const About: React.FC = () => {
@@ -12,8 +12,8 @@ const About: React.FC = () => {
     const [fade, setFade] = useState(false);
 
     const { ref, inView } = useInView({
-        threshold: 0.5,
-        rootMargin: "-64px 0px 0px 0px",
+        threshold: 0.35,
+        rootMargin: `-${ 64 + 48 }px 0px 0px 0px`,
         triggerOnce: true
     });
 
@@ -42,19 +42,18 @@ const About: React.FC = () => {
                 <div ref={ ref }
                     className={ `flex flex-col 2xl:flex-row gap-8 2xl:gap-12 p-8 md:p-12 rounded-3xl
                     border-4 border-earth-beige-light bg-earth-beige-dark items-center justify-center
-                    ${ inView ? "slide-y" 
-                    : "opacity-0 translate-y-[100px]" }` }>
+                    ${ inView ? "slide-y" : "opacity-0 translate-y-[100px]" }` }>
                     <div className="flex flex-col gap-4 lg:gap-8 items-center justify-center">
                         <h3 className={ `font-caladea text-4xl text-earth-green
                             transition-fade ${ fade ? "opacity-0" : "opacity-100" }` }>
-                            { aboutNames[index] }
+                            { aboutItems[index].topic }
                         </h3>
                         <p className={ `max-w-2xl font-poppins text-md md:text-lg leading-loose md:leading-loose font-normal text-wrap text-earth-grey 
                             transition-fade ${ fade ? "opacity-0" : "opacity-100" }` }>
                             { aboutItems[index].description }
                         </p>
                     </div>
-                    <Image src={ aboutItems[index].src } height={ 0 } width={ 800 } alt={ `${ aboutNames[index] } image` }
+                    <Image src={ aboutItems[index].src } height={ 0 } width={ 800 } alt={ `${ aboutItems[index].topic } image` }
                         className={ `border-[10px] lg:border-[25px] border-earth-white 
                         transition-fade ${ fade ? "opacity-0" : "opacity-100" }` }/>
                 </div>

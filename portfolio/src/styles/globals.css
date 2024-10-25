@@ -21,6 +21,10 @@
         after:h-0.5 after:bg-earth-yellow-dark after:w-full after:scale-x-0 
         after:hover:scale-x-100 after:transition after:duration-200 after:origin-center
     }
+    /* Styling for anchors in project cards */
+    .project-link {
+        @apply p-3 w-1/2 rounded-full font-poppins font-medium text-lg text-center
+    }
     /* Wrapper container used across each section */
     .wrapper {
         @apply w-full min-h-screen pt-16 bg-earth-white
