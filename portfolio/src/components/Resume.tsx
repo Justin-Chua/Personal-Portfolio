@@ -4,13 +4,14 @@ import "react-vertical-timeline-component/style.min.css";
 import { School, Work } from "@mui/icons-material";
 
 import { resumeItems } from "@/data/PortfolioData";
+import Header from "@/components/Header";
 
 const Resume: React.FC = () => {
 
     return (
-        <div id="resume" className="wrapper">
+        <section id="resume" className="wrapper">
             <div className="flex flex-col gap-y-4 p-12 items-center justify-center">
-                <h3 className="font-caladea text-6xl text-earth-grey">education & experience</h3>
+                <Header text="education & experience"></Header>
                 <VerticalTimeline lineColor="#E4D9B6">
                     { resumeItems.map((item) => (
                         <VerticalTimelineElement
@@ -32,17 +33,25 @@ const Resume: React.FC = () => {
                                 background: "#7B4B36",
                                 boxShadow: "0 0 0 4px #E4D9B6"
                             }}
-                            textClassName="font-poppins text-earth-grey"
                         >
-                            <h2 className="vertical-timeline-element-title font-medium">{ item.title }</h2>
-                            <h4 className="vertical-timeline-element-subtitle">{ item.company }</h4>
-                            <h4 className="vertical-timeline-element-subtitle">{ item.location }</h4>
+                            <h2 className="vertical-timeline-element-title 
+                                font-caladea font-bold text-earth-grey">
+                                { item.title }
+                            </h2>
+                            <h4 className="vertical-timeline-element-subtitle
+                                font-poppins font-light italic text-earth-green">
+                                { item.company }
+                            </h4>
+                            <h4 className="vertical-timeline-element-subtitle
+                                font-poppins font-light text-earth-grey">
+                                { item.location }
+                            </h4>
                             { item.description ? <p>{ item.description }</p> : null }
                         </VerticalTimelineElement>
                     ))}
                 </VerticalTimeline>
             </div>
-        </div>
+        </section>
     );
 };
 
