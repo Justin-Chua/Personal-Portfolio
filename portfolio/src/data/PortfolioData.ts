@@ -10,7 +10,6 @@ interface navItem {
     href: string;
 }
 
-// Items with a href marked as '#' have not been completed
 export const navItems: navItem[] = [
     { label: "home", href: "#home" },
     { label: "about", href: "#about" },
@@ -201,12 +200,12 @@ const PROJECT_PATH = "/resources/projects";
 export const projectItems: projectItem[] = [
     {
         type: "full stack web application",
-        name: "ucalgary parking app",
+        name: "ucalgary parking",
         src: `${ PROJECT_PATH }/ucalgary_parking.png`,
         description: `
-            A proof-of-concept web application, aimed at transforming UCalgary's parking system by \ 
+            A proof-of-concept web application, aimed at transforming UCalgary's parking services by \ 
             unifying them into one application. Users can easily manage \
-            parking tickets, parking permits and our innovative parking reservation feature. \
+            parking tickets, parking permits and an innovative parking reservation feature. \
             Administrative users can issue tickets, notifications, and revoke permits.
             `,
         repoLink: "https://github.com/Justin-Chua/UCalgary-Parking-Application",
@@ -256,7 +255,8 @@ export const projectItems: projectItem[] = [
             "HTML5",
             "CSS3",
             "Blazor",
-            ".NET"
+            ".NET",
+            "Git"
         ]
     },
     {
