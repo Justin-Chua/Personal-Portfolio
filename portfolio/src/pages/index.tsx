@@ -13,6 +13,7 @@ const Page = () => {
   return (
     <div>
       <Head>
+        <link rel="icon" href="/favicon.ico"/>
         <title>Justin Chua | Portfolio</title>
         <meta name="description" content="Portfolio for Justin Chua, a full stack software developer based in Calgary, Alberta."/>
         <meta name="author" content="Justin Chua"/>
