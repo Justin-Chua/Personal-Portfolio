@@ -37,10 +37,15 @@
     /* Styling for anchors in contact section */
     .contact-card {
         @apply bg-earth-beige-dark w-[400px] px-6 py-4 rounded-xl border-4 border-earth-beige-light
-        font-poppins font-medium text-xl text-earth-grey 
         transition-transform duration-200 ease-linear hover:-translate-y-2
+        flex flex-row items-center justify-start
+        text-earth-brown-dark text-6xl
     }
-    
+    /* Styling for card text in contact card */
+    .contact-card-text {
+        @apply font-poppins font-medium text-xl text-earth-grey 
+    }
+
     /* Fade transition animation for the about section */
     .transition-fade {
         @apply transition-opacity duration-700 ease-in-out

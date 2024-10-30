@@ -23,18 +23,24 @@ const Contact: React.FC = () => {
                         ${ inView ? "slide-x" : "opacity-0 translate-x-[-100px]" }` }>
                         <a href="https://www.linkedin.com/in/justin-chua-86745b251/"
                             className="contact-card">
-                            <LinkedIn className="text-earth-brown-dark mr-6 text-6xl"></LinkedIn>
-                            View my LinkedIn profile
+                            <LinkedIn color="inherit" fontSize="inherit" className="mr-6"></LinkedIn>
+                            <p className="contact-card-text">
+                                View my LinkedIn profile
+                            </p>
                         </a>
                         <a href="https://github.com/Justin-Chua"
                             className="contact-card">
-                            <GitHub className="text-earth-brown-dark mr-6 text-6xl"></GitHub>
-                            View my GitHub profile
+                            <GitHub color="inherit" fontSize="inherit" className="mr-6"></GitHub>
+                            <p className="contact-card-text">
+                                View my GitHub profile
+                            </p>
                         </a>
                         <a href="mailto:justinkchua@gmail.com"
                             className="contact-card">
-                            <Email className="text-earth-brown-dark mr-6 text-6xl"></Email>
-                            justinkchua@gmail.com
+                            <Email color="inherit" fontSize="inherit" className="mr-6"></Email>
+                            <p className="contact-card-text">
+                                justinkchua@gmail.com
+                            </p>
                         </a>
                     </div>
                     <Image ref={ ref }

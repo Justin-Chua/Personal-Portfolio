@@ -31,8 +31,9 @@ const Home: React.FC = () => {
                         text-earth-grey leading-relaxed md:leading-loose">
                             { introduction }
                         </p>
-                        <Link href="#about">
-                            <KeyboardArrowDown className="text-6xl text-earth-grey animate-bounce" />
+                        <Link href="#about"
+                            className="text-earth-grey text-6xl">
+                            <KeyboardArrowDown color="inherit" fontSize="inherit" className="animate-bounce" />
                         </Link>
                     </div>
                 </div>
