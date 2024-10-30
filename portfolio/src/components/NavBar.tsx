@@ -26,8 +26,8 @@ const NavBar: React.FC = () => {
             </div>
             <div className={ `flex-col lg:flex-row gap-4 lg:gap-10 pt-4 lg:pt-0 items-center justify-center
                 ${ navOpen ? "flex" : "hidden lg:flex" }` }>
-                { navItems.map((item) => (
-                    <Link href={ item.href } className="nav-hover">{ item.label }</Link>
+                { navItems.map((item, index) => (
+                    <Link key={ index } href={ item.href } className="nav-hover">{ item.label }</Link>
                 ))}
             </div>
         </nav>

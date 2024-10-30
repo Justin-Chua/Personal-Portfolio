@@ -37,7 +37,7 @@ const About: React.FC = () => {
 
     return (
         <section id="about" className="wrapper">
-            <div className="flex flex-col gap-y-12 p-12 items-center justify-center">
+            <div className="flex flex-col gap-y-12 px-4 py-12 items-center justify-center">
                 <Header text="about me"></Header>
                 <div ref={ ref }
                     className={ `flex flex-col 2xl:flex-row gap-8 2xl:gap-12 p-8 md:p-12 rounded-3xl

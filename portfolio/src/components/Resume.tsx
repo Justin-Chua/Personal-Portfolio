@@ -10,11 +10,12 @@ const Resume: React.FC = () => {
 
     return (
         <section id="resume" className="wrapper">
-            <div className="flex flex-col gap-y-4 p-12 items-center justify-center">
+            <div className="flex flex-col gap-y-4 px-4 py-12 items-center justify-center">
                 <Header text="education & experience"></Header>
                 <VerticalTimeline lineColor="#E4D9B6">
-                    { resumeItems.map((item) => (
+                    { resumeItems.map((item, index) => (
                         <VerticalTimelineElement
+                            key={ index }
                             className="vertical-timeline-element--work"
                             contentStyle={{ 
                                 background: "#DDCBB7",

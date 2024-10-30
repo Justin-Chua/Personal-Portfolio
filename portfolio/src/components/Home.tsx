@@ -17,7 +17,7 @@ const Home: React.FC = () => {
     
     return (
         <section id="home" className="wrapper bg-minimalist-home bg-cover">
-            <div className="flex flex-col gap-y-12 p-12 items-center justify-center">
+            <div className="flex flex-col gap-y-12 px-4 py-12 items-center justify-center">
                 <Header text="hi everyone! i'm justin :)"></Header>
                 <div className="flex flex-wrap items-center justify-center gap-y-4 gap-x-32">
                     <Image ref={ ref }

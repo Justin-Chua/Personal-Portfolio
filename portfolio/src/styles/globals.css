@@ -24,7 +24,7 @@
     }
     /* Styling for anchors in project cards */
     .project-link {
-        @apply p-3 w-1/2 rounded-full font-poppins font-medium text-lg text-center
+        @apply p-3 w-1/2 rounded-full font-poppins font-medium text-sm xs:text-lg text-center
     }
     /* Wrapper container used across all sections - except for contact */
     .wrapper {
@@ -36,14 +36,14 @@
     }
     /* Styling for anchors in contact section */
     .contact-card {
-        @apply bg-earth-beige-dark w-[400px] px-6 py-4 rounded-xl border-4 border-earth-beige-light
+        @apply bg-earth-beige-dark w-[350px] px-6 py-4 rounded-xl border-4 border-earth-beige-light
         transition-transform duration-200 ease-linear hover:-translate-y-2
         flex flex-row items-center justify-start
         text-earth-brown-dark text-6xl
     }
     /* Styling for card text in contact card */
     .contact-card-text {
-        @apply font-poppins font-medium text-xl text-earth-grey 
+        @apply font-poppins font-medium text-lg text-earth-grey 
     }
 
     /* Fade transition animation for the about section */

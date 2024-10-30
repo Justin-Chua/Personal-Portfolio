@@ -17,19 +17,19 @@ const ProjectsCard: React.FC<{ type: string; name: string; src: string; descript
     return (
         <div ref={ ref }
             style={{ transitionDelay: `${ 150 * index }ms` }}
-            className={ `flex flex-col gap-y-4 p-6 w-[450px] h-[650px] rounded-2xl bg-earth-beige-dark border-4 border-earth-beige-light justify-between
+            className={ `flex flex-col gap-y-4 p-6 max-w-[450px] min-h-[650px] rounded-2xl bg-earth-beige-dark border-4 border-earth-beige-light justify-between
             ${ inView ? "slide-y" : "opacity-0 translate-y-[100px]" }` }>
             <Image src={ src } height={ 0 } width={ 400 } alt={ `${ name } logo` }/>
             <div className="flex flex-col items-start justify-start">
-                <h3 className="font-caladea font-normal italic text-xl text-earth-green">{ type }</h3>
+                <h3 className="font-caladea font-normal italic text-lg text-earth-green">{ type }</h3>
                 <h2 className="font-caladea font-bold text-3xl text-earth-grey">{ name }</h2>
             </div>
             <p className="font-poppins font-normal text-sm leading-[1.7] text-earth-grey">
                 { description }
             </p>
             <div className="flex flex-wrap gap-1 items-start justify-start">
-                { tags.map((tag) => (
-                    <Chip technology={ tag }></Chip>
+                { tags.map((tag, index) => (
+                    <Chip key={ index } technology={ tag }></Chip>
                 ))}
             </div>
             <div className="flex flex-row gap-4 items-center justify-between">
@@ -37,13 +37,13 @@ const ProjectsCard: React.FC<{ type: string; name: string; src: string; descript
                     <a className="project-link bg-earth-yellow-light text-earth-brown-light
                         hover:bg-earth-yellow-dark hover:text-earth-brown-dark active:scale-95"
                         href={ repoLink }>
-                        <GitHub className="mr-2"></GitHub>
+                        <GitHub color="inherit" fontSize="inherit" className="mr-2"></GitHub>
                         repository
                     </a>
                 ) : (
                     <button disabled
                         className="project-link bg-earth-yellow-light text-earth-brown-light brightness-50">
-                        <GitHub className="mr-2"></GitHub>
+                        <GitHub color="inherit" fontSize="inherit" className="mr-2"></GitHub>
                         repository
                     </button>                    
                 )}
@@ -51,13 +51,13 @@ const ProjectsCard: React.FC<{ type: string; name: string; src: string; descript
                     <a className="project-link bg-earth-brown-light text-earth-yellow-light
                         hover:bg-earth-brown-dark hover:text-earth-yellow-dark active:scale-95"
                     href={ demoLink }>
-                        <OpenInNew className="mr-2"></OpenInNew>
+                        <OpenInNew color="inherit" fontSize="inherit" className="mr-2"></OpenInNew>
                         live demo
                     </a>
                 ) : (
                     <button disabled
                         className="project-link bg-earth-brown-light text-earth-yellow-light brightness-50">
-                        <OpenInNew className="mr-2"></OpenInNew>
+                        <OpenInNew color="inherit" fontSize="inherit" className="mr-2"></OpenInNew>
                         live demo
                     </button>
                 )}

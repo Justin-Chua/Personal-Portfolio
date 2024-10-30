@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
 
     return (
         <section id="contact" className="contact-wrapper">
-            <div className="flex flex-col p-12 gap-y-10 items-center justify-center">
+            <div className="flex flex-col px-4 py-12 gap-y-10 items-center justify-center">
                 <Header text="feel free to get in touch with me!"></Header>
                 <div className="flex flex-row gap-48 items-center justify-center">
                     <div ref={ ref }
@@ -25,14 +25,14 @@ const Contact: React.FC = () => {
                             className="contact-card">
                             <LinkedIn color="inherit" fontSize="inherit" className="mr-6"></LinkedIn>
                             <p className="contact-card-text">
-                                View my LinkedIn profile
+                                View my LinkedIn
                             </p>
                         </a>
                         <a href="https://github.com/Justin-Chua"
                             className="contact-card">
                             <GitHub color="inherit" fontSize="inherit" className="mr-6"></GitHub>
                             <p className="contact-card-text">
-                                View my GitHub profile
+                                View my GitHub
                             </p>
                         </a>
                         <a href="mailto:justinkchua@gmail.com"
@@ -43,10 +43,8 @@ const Contact: React.FC = () => {
                             </p>
                         </a>
                     </div>
-                    <Image ref={ ref }
-                        src="/resources/contact/botany.png" height={ 0 } width={ 550 } alt="botany"
-                        className={ `hidden xl:block
-                        ${ inView ? "slide-x" : "opacity-0 translate-x-[100px]" }` }>
+                    <Image src="/resources/contact/botany.png" height={ 0 } width={ 550 } alt="botany"
+                        className="hidden xl:block">
                     </Image>
                 </div>
             </div>
