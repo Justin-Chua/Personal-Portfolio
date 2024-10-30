@@ -14,7 +14,7 @@ const SkillsCard: React.FC<{ name: string; src: string; index: number; }> = ({ n
     return (
         <div ref={ ref }
             // we use style to apply transition delay dynamically instead of using className
-            style={{ transitionDelay: `${ 150 * index }ms` }}
+            style={{ transitionDelay: `${ 100 * index }ms` }}
             className={ `flex flex-col w-[125px] aspect-square rounded-2xl 
             border-4 border-earth-beige-light bg-earth-beige-dark items-center justify-center
             ${ inView ? "slide-y" : "opacity-0 translate-y-[100px]" } }`}>
