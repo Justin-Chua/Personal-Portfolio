@@ -14,8 +14,7 @@ const Skills: React.FC = () => {
                         <div className="flex flex-wrap gap-12 items-center justify-center">
                             { item.technologies.map((technology, index) => (
                                 <SkillsCard name={ technology.name } src={ technology.src } index={ index }></SkillsCard>
-                            ))
-                            }
+                            ))}
                         </div>
                     </div>
                 ))}

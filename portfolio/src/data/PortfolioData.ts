@@ -33,29 +33,29 @@ export const aboutItems: aboutItem[] = [
         src: `${ ABOUT_PATH }/programming.jpg`,
         description: `
             My journey into programming began in my first year of university, \
-            with an introductory course in Java that introduced me to fundamental programming concepts. \
+            with an intro course in Java that introduced me to fundamental programming concepts. \
             Since then, I've had to the opportunity to complete my degree in Computer Science, and \
             develop a strong interest in full-stack web development and data visualization. Discovering \
-            and mastering new programming concepts fuels my enthusiasm to grow professionally as a developer!
+            and mastering new programming concepts is what fuels my enthusiasm to continously grow as a developer!
             `
     },
     {   
         topic: "family",
         src: `${ ABOUT_PATH }/family.jpg`,
         description: `
-            Like many others, nothing means more to me in this world than my family. \
-            I can confidently say that I wouldn't be where I am today without their unwavering support. \
+            Nothing is more important to me than my family. \
+            I can say with confidence that I wouldn't be where I am today without their support. \
             The compassion and wisdom they imparted to me growing up has shaped me in ways that continue \
-            to resonate through my daily actions. This influence drives me to be the best teammate that I \
-            can be in a professional setting, and treat my peers with the same level of respect and \
-            kindness that I receive from my family.
+            to resonate through my daily actions. This influence is what drives me to be an excellent teammate \
+            in a professional setting, and treat my peers with the same level of respect and \
+            kindness that I receive from my own family.
             `
     },
     {
         topic: "travelling",
         src: `${ ABOUT_PATH }/zipline.jpg`,
         description: `
-            I'm a lifelong learner by nature, which incidentally makes me a fanatic for \
+            I'm a lifelong learner by nature, which makes me a fanatic for \
             travelling! It truly is a blessing to be able to learn about and embrace other cultures \
             around the world. Whether it's participating in local festivities, visiting historical \
             landmarks, or simply strolling through the city to admire the architecture. I enjoy discovering \
@@ -67,9 +67,9 @@ export const aboutItems: aboutItem[] = [
         src: `${ ABOUT_PATH }/rockets.jpg`,
         description: `
             I don't play basketball much myself, but I've always been an enthusiastic \
-            NBA fan. Besides the game, one aspect that has always stood out to me is the unique player \
+            NBA fan. Besides the game, one aspect that's always stood out to me is the unique player \
             and team statistics displayed throughout, along with the creative visualizations that accompany \
-            them. Also, for those curious, I'm a big time Houston Rockets fan. I'm hoping that Sengun is an \
+            them. Also, for those curious, I'm a big time Houston Rockets fan. Hoping that Sengun is an \
             All-Star this year and we make the play-in tournament!
             `
     },
@@ -78,10 +78,10 @@ export const aboutItems: aboutItem[] = [
         src: `${ ABOUT_PATH }/witcher.jpg`,
         description: `
             Video games have been a significant part of my life for as long as I can remember. \
-            My favorite genre has to be single player, open-world RPGs that feature intricate world design, \
+            My favorite genre is definitely single player, open-world RPGs that feature intricate world design, \
             deep lore and complex puzzles. Some of my top picks include The Witcher 3, the Uncharted series \
-            and Horizon series. While I primarily play for enjoyment, I feel that video games inadvertently \
-            influence my problem solving abilities and foster my natural curiosity.
+            and Horizon series. While I mostly play for enjoyment, I feel that video games also serve \
+            as a great outlet for honing my problem solving skills and fostering my natural curiosity.
             `
     }
 ];
