@@ -22,6 +22,8 @@ const Contact: React.FC = () => {
                         className={ `flex flex-col gap-10 items-center justify-center
                         ${ inView ? "slide-x" : "opacity-0 translate-x-[-100px]" }` }>
                         <a href="https://www.linkedin.com/in/justin-chua-86745b251/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="contact-card">
                             <LinkedIn color="inherit" fontSize="inherit" className="mr-6"></LinkedIn>
                             <p className="contact-card-text">
@@ -29,6 +31,8 @@ const Contact: React.FC = () => {
                             </p>
                         </a>
                         <a href="https://github.com/Justin-Chua"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="contact-card">
                             <GitHub color="inherit" fontSize="inherit" className="mr-6"></GitHub>
                             <p className="contact-card-text">

@@ -34,9 +34,11 @@ const ProjectsCard: React.FC<{ type: string; name: string; src: string; descript
             </div>
             <div className="flex flex-row gap-4 items-center justify-between">
                 { repoLink !== undefined ? (
-                    <a className="project-link bg-earth-yellow-light text-earth-brown-light
-                        hover:bg-earth-yellow-dark hover:text-earth-brown-dark active:scale-95"
-                        href={ repoLink }>
+                    <a href={ repoLink }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link bg-earth-yellow-light text-earth-brown-light
+                        hover:bg-earth-yellow-dark hover:text-earth-brown-dark active:scale-95">
                         <GitHub color="inherit" fontSize="inherit" className="mr-2"></GitHub>
                         repository
                     </a>
@@ -48,9 +50,11 @@ const ProjectsCard: React.FC<{ type: string; name: string; src: string; descript
                     </button>                    
                 )}
                 { demoLink !== undefined ? (
-                    <a className="project-link bg-earth-brown-light text-earth-yellow-light
-                        hover:bg-earth-brown-dark hover:text-earth-yellow-dark active:scale-95"
-                    href={ demoLink }>
+                    <a href={ demoLink }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link bg-earth-brown-light text-earth-yellow-light
+                        hover:bg-earth-brown-dark hover:text-earth-yellow-dark active:scale-95">
                         <OpenInNew color="inherit" fontSize="inherit" className="mr-2"></OpenInNew>
                         live demo
                     </a>

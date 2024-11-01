@@ -117,6 +117,7 @@ export const skillsItems: skillItem[] = [
             { name: "React.js", src: `${ ICON_PATH }/frameworks/react_logo.png` },
             { name: "Vue.js", src: `${ ICON_PATH }/frameworks/vue_logo.png` },
             { name: "Node.js", src: `${ ICON_PATH }/frameworks/node_logo.png` },
+            { name: "Express.js", src: `${ ICON_PATH }/frameworks/express_logo.png`},
             { name: "Bootstrap", src: `${ ICON_PATH }/frameworks/bootstrap_logo.png` },
             { name: "Tailwind CSS", src: `${ ICON_PATH }/frameworks/tailwindcss_logo.png` },
             { name: "Next.js", src: `${ ICON_PATH }/frameworks/next_logo.png` }
@@ -209,6 +210,7 @@ export const projectItems: projectItem[] = [
             Administrative users can issue tickets, notifications, and revoke permits.
             `,
         repoLink: "https://github.com/Justin-Chua/UCalgary-Parking-Application",
+        demoLink: "https://ucalgary-parking.vercel.app",
         tags: [
             "Python",
             "JavaScript",
@@ -230,11 +232,13 @@ export const projectItems: projectItem[] = [
             diverse variety of games, add their own games, add friends, and participate in discussions.
             `,
         repoLink: "https://github.com/Justin-Chua/MMGA",
+        demoLink: "https://makemobilegreatagain.vercel.app",
         tags: [
             "JavaScript",
             "CSS3",
             "Vue.js",
             "Node.js",
+            "Express.js",
             "Git",
             "MySQL",
             "Docker"
