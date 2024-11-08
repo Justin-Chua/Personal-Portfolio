@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
                 <div className="flex flex-row gap-48 items-center justify-center">
                     <div ref={ ref }
                         className={ `flex flex-col gap-10 items-center justify-center
-                        ${ inView ? "slide-x" : "opacity-0 translate-x-[-100px]" }` }>
+                        ${ inView ? "slide-y" : "opacity-0 translate-y-[100px]" }` }>
                         <a href="https://www.linkedin.com/in/justin-chua-86745b251/"
                             target="_blank"
                             rel="noopener noreferrer"

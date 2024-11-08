@@ -50,10 +50,6 @@
     .transition-fade {
         @apply transition-opacity duration-700 ease-in-out
     }
-    /* Slide animation along the x-axis - for intersection observer */
-    .slide-x {
-        @apply transition-all duration-700 ease-out opacity-100 translate-x-[0px]
-    }
     /* Slide animation along the y-axis - for intersection observer */
     .slide-y {
         @apply transition-all duration-700 ease-out opacity-100 translate-y-[0px]

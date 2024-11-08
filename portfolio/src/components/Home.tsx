@@ -10,7 +10,7 @@ import Header from "@/components/Header";
 const Home: React.FC = () => {
 
     const { ref, inView } = useInView({
-        threshold: 0.35,
+        threshold: 0.25,
         rootMargin: `-${ 64 + 48 }px 0px 0px 0px`,
         triggerOnce: true
     });
@@ -23,10 +23,10 @@ const Home: React.FC = () => {
                     <Image ref={ ref }
                         src="/resources/home/grad_photo.jpg" height={ 0 } width={ 300 } alt="Graduation photo"
                         className={ `border-[25px] border-earth-white md:w-[450px]
-                        ${ inView ? "slide-x delay-200" : "opacity-0 translate-x-[-100px]" }` }/>
+                        ${ inView ? "slide-y delay-200" : "opacity-0 translate-y-[100px]" }` }/>
                     <div ref={ ref }
                         className={ `flex flex-col items-center justify-center gap-y-2
-                        ${ inView ? "slide-x delay-200" : "opacity-0 translate-x-[100px]" }` }>
+                        ${ inView ? "slide-y delay-200" : "opacity-0 translate-y-[100px]" }` }>
                         <p className="max-w-3xl p-8 md:p-4 font-poppins text-xl md:text-3xl font-normal text-center 
                         text-earth-grey leading-relaxed md:leading-loose">
                             { introduction }

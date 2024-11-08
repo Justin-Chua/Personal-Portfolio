@@ -10,7 +10,7 @@ import Header from "@/components/Header";
 const Resume: React.FC = () => {
 
     const { ref, inView } = useInView({
-        threshold: 0.35,
+        threshold: 0.25,
         rootMargin: `-${ 64 + 48 }px 0px 0px 0px`,
         triggerOnce: true
     });

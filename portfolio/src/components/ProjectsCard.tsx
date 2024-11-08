@@ -9,7 +9,7 @@ const ProjectsCard: React.FC<{ type: string; name: string; src: string; descript
 = ({ type, name, src, description, repoLink, demoLink, tags, index }) => {
 
     const { ref, inView } = useInView({
-        threshold: 0.35,
+        threshold: 0.25,
         rootMargin: `-${ 64 + 48 }px 0px 0px 0px`,
         triggerOnce: true
     });
