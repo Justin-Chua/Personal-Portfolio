@@ -104,10 +104,10 @@ export const skillsItems: skillItem[] = [
     technologies: [
       { name: 'Python', src: `${ICON_PATH}/languages/python_logo.png` },
       { name: 'JavaScript', src: `${ICON_PATH}/languages/javascript_logo.png` },
+      { name: 'TypeScript', src: `${ICON_PATH}/languages/typescript_logo.png` },
       { name: 'HTML5', src: `${ICON_PATH}/languages/html5_logo.png` },
       { name: 'CSS3', src: `${ICON_PATH}/languages/css3_logo.png` },
-      { name: 'Java', src: `${ICON_PATH}/languages/java_logo.png` },
-      { name: 'TypeScript', src: `${ICON_PATH}/languages/typescript_logo.png` }
+      { name: 'Java', src: `${ICON_PATH}/languages/java_logo.png` }
     ]
   },
   {
@@ -118,9 +118,10 @@ export const skillsItems: skillItem[] = [
       { name: 'Vue.js', src: `${ICON_PATH}/frameworks/vue_logo.png` },
       { name: 'Node.js', src: `${ICON_PATH}/frameworks/node_logo.png` },
       { name: 'Express.js', src: `${ICON_PATH}/frameworks/express_logo.png` },
+      { name: 'Next.js', src: `${ICON_PATH}/frameworks/next_logo.png` },
       { name: 'Bootstrap', src: `${ICON_PATH}/frameworks/bootstrap_logo.png` },
       { name: 'Tailwind CSS', src: `${ICON_PATH}/frameworks/tailwindcss_logo.png` },
-      { name: 'Next.js', src: `${ICON_PATH}/frameworks/next_logo.png` }
+      { name: 'ChakraUI', src: `${ICON_PATH}/frameworks/chakra_logo.png` }
     ]
   },
   {
@@ -128,6 +129,7 @@ export const skillsItems: skillItem[] = [
     technologies: [
       { name: 'Git', src: `${ICON_PATH}/tools/git_logo.png` },
       { name: 'MySQL', src: `${ICON_PATH}/tools/mysql_logo.png` },
+      { name: 'MongoDB', src: `${ICON_PATH}/tools/mongo_logo.png` },
       { name: 'Docker', src: `${ICON_PATH}/tools/docker_logo.png` }
     ]
   }
@@ -201,6 +203,26 @@ const PROJECT_PATH = '/resources/projects'
 export const projectItems: projectItem[] = [
   {
     type: 'full stack web application',
+    name: 'nba trade finder v1',
+    src: `${PROJECT_PATH}/trade_finder.png`,
+    description: `
+            A web application designed to replicate the NBA Trade Finder feature in NBA 2K video games. \
+            NBA enthusiasts are able to simulate trades involving two different teams and players, \
+            complete with salary matching restrictions used in the NBA.
+            `,
+    repoLink: 'https://github.com/Justin-Chua/NBA-Trade-Finder',
+    tags: [
+      'Python',
+      'JavaScript',
+      'Node.js',
+      'Express.js',
+      'ChakraUI',
+      'Git',
+      'MongoDB'
+    ]
+  },
+  {
+    type: 'full stack web application',
     name: 'ucalgary parking',
     src: `${PROJECT_PATH}/ucalgary_parking.png`,
     description: `
@@ -264,23 +286,20 @@ export const projectItems: projectItem[] = [
     ]
   },
   {
-    type: 'full stack web application (in progress)',
-    name: 'nba trade finder',
-    src: `${PROJECT_PATH}/trade_finder.png`,
+    type: 'front-end web application (in progress)',
+    name: 'genrefy',
+    src: `${PROJECT_PATH}/genrefy.png`,
     description: `
-            A web application designed to replicate the NBA Trade Finder feature in NBA 2K video games. \
-            NBA enthusiasts are able to simulate trades involving their favorite teams and players, \
-            complete with constraints akin to the official regulations in the NBA.
-            `,
+            A simple web application that tags each song in a Spotify playlist entered by the user
+            with appropriate genres. This intuitive tool enables users to categorize your music,
+            filter songs by genre, and create tailored, genre-specific playlists.
+          `,
     tags: [
-      'Python',
       'TypeScript',
-      'Django',
       'Next.js',
-      'ChakraUI',
-      'Git',
-      'MongoDB'
+      'NextUI',
+      'Tailwind CSS',
+      'Git'
     ]
-
   }
 ]
