@@ -214,6 +214,7 @@ export const projectItems: projectItem[] = [
     tags: [
       'Python',
       'JavaScript',
+      'React.js',
       'Node.js',
       'Express.js',
       'ChakraUI',
@@ -267,7 +268,7 @@ export const projectItems: projectItem[] = [
     ]
   },
   {
-    type: 'front-end mobile application',
+    type: 'front end mobile application',
     name: 'cooking buddy',
     src: `${PROJECT_PATH}/cooking_buddy.png`,
     description: `
@@ -286,12 +287,12 @@ export const projectItems: projectItem[] = [
     ]
   },
   {
-    type: 'front-end web application (in progress)',
+    type: 'front end web application (in progress)',
     name: 'genrefy',
     src: `${PROJECT_PATH}/genrefy.png`,
     description: `
             A simple web application that tags each song in a Spotify playlist entered by the user
-            with appropriate genres. This intuitive tool enables users to categorize your music,
+            with appropriate genres. This intuitive tool enables users to categorize their music,
             filter songs by genre, and create tailored, genre-specific playlists.
           `,
     tags: [
