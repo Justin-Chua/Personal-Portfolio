@@ -36,7 +36,7 @@ export const aboutItems: aboutItem[] = [
             with an intro course in Java that taught me the basics. I'll never forget the horrors of learning
             recursion for the first time - wondering if I would ever get the hang of it.
             Fast forward to today, and I'm officially a Computer Science graduate! Along the way, I
-            developing a strong interest in full-stack development - which I'm super excited to keep learning and building on.
+            developed a strong interest in full-stack development - which I'm super excited to keep learning and building on.
             `
   },
   {
