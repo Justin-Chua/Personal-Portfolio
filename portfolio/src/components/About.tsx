@@ -58,13 +58,13 @@ const About: React.FC = () => {
             >
               {aboutItems[slideIndex].description}
             </p>
-            <div className='flex flex-row gap-4 text-earth-grey text-5xl items-center justify-center'>
+            <div className='flex flex-row gap-4 text-earth-grey text-4xl items-center justify-center'>
               <button 
                 type='button'
                 onClick={() => changeSlide('decrement')}
                 className='hover:brightness-50'
               >
-                <KeyboardArrowLeft color='inherit' fontSize='inherit' className='block' />
+                <KeyboardArrowLeft color='inherit' fontSize='inherit' className='block align-middle' />
               </button>
               {aboutItems.map((_, index) => (
                 <button 
@@ -80,7 +80,7 @@ const About: React.FC = () => {
                 onClick={() => changeSlide('increment')}
                 className='hover:brightness-50'
               >
-                <KeyboardArrowRight color='inherit' fontSize='inherit' className='block' />
+                <KeyboardArrowRight color='inherit' fontSize='inherit' className='block align-middle' />
               </button>
             </div>
           </div>
