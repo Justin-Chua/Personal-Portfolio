@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 
@@ -29,8 +29,8 @@ const About: React.FC = () => {
       } else {
         // increment or decrement slideIndex based on previous slideIndex value
         target === 'increment' 
-        ? setSlideIndex(prevslideIndex => prevslideIndex != (aboutItems.length - 1) ? (prevslideIndex + 1) : 0)
-        : setSlideIndex(prevslideIndex => prevslideIndex != 0 ? (prevslideIndex  - 1) : aboutItems.length - 1)
+        ? setSlideIndex(prevslideIndex => prevslideIndex !== (aboutItems.length - 1) ? (prevslideIndex + 1) : 0)
+        : setSlideIndex(prevslideIndex => prevslideIndex !== 0 ? (prevslideIndex  - 1) : aboutItems.length - 1)
       }
       // trigger fade-in animation
       setFade(false)
