@@ -36,14 +36,12 @@
     }
     /* Styling for anchors in contact section */
     .contact-card {
-        @apply bg-earth-beige-dark w-[350px] px-6 py-4 rounded-xl border-4 border-earth-beige-light
-        transition-transform duration-200 ease-linear hover:-translate-y-2
-        flex flex-row items-center justify-start
-        text-earth-brown-dark text-6xl
+        @apply flex flex-row gap-4 my-12 bg-earth-beige-dark w-[350px] px-6 py-4 rounded-xl border-4 border-earth-beige-light
+        hover:brightness-90 text-earth-brown-dark text-5xl items-center justify-center
     }
     /* Styling for card text in contact card */
     .contact-card-text {
-        @apply font-poppins font-medium text-lg text-earth-grey 
+        @apply grow font-poppins font-medium text-lg text-earth-grey text-center
     }
 
     /* Fade transition animation for the about section */

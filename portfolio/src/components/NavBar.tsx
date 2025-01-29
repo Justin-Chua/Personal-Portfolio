@@ -10,15 +10,16 @@ const NavBar: React.FC = () => {
 
   return (
   // We set the z-index to 999 to ensure that it always overlaps all other components
-    <nav className='flex flex-col lg:flex-row fixed px-10 py-4 lg:py-0 w-full min-h-16 z-[999] items-stretch justify-between
-            bg-earth-green bg-opacity-95'
+    <nav className='flex flex-col lg:flex-row fixed px-10 py-4 lg:py-0 w-full min-h-16 z-[999] 
+      items-stretch justify-between bg-earth-green bg-opacity-95'
     >
       <div className='flex flex-row items-center justify-between'>
         <Link href='#home'>
           <Image src='/resources/home/signature.png' height={0} width={175} alt="Justin Chua's signature" />
         </Link>
         <button
-          onClick={() => { setNavOpen(!navOpen) }}
+          type='button'
+          onClick={() => {setNavOpen(!navOpen)}}
           className='block lg:hidden'
         >
           {navOpen

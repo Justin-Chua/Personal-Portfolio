@@ -11,7 +11,7 @@ const Header: React.FC<{ text: string }> = ({ text }) => {
   return (
     <h1
       ref={ref}
-      className={`font-caladea text-6xl font-bold text-center text-earth-grey
+      className={`font-caladea text-5xl md:text-6xl font-bold text-center text-earth-grey
             ${inView ? 'slide-y' : 'opacity-0 translate-y-[50px]'}`}
     >
       {text}

@@ -17,8 +17,8 @@ const ProjectsCard: React.FC<{ type: string, name: string, src: string, descript
     <div
       ref={ref}
       style={{ transitionDelay: `${150 * index}ms` }}
-      className={`flex flex-col gap-y-4 p-6 max-w-[450px] min-h-[650px] rounded-2xl bg-earth-beige-dark border-4 border-earth-beige-light justify-between
-            ${inView ? 'slide-y' : 'opacity-0 translate-y-[100px]'}`}
+      className={`flex flex-col gap-y-4 p-6 max-w-[450px] min-h-[650px] rounded-2xl bg-earth-beige-dark border-4 border-earth-beige-light 
+            justify-between ${inView ? 'slide-y' : 'opacity-0 translate-y-[100px]'}`}
     >
       <Image src={src} height={0} width={400} alt={`${name} logo`} />
       <div className='flex flex-col items-start justify-start'>
@@ -44,16 +44,17 @@ const ProjectsCard: React.FC<{ type: string, name: string, src: string, descript
                         hover:bg-earth-yellow-dark hover:text-earth-brown-dark active:scale-95'
             >
               <GitHub color='inherit' fontSize='inherit' className='mr-2' />
-              repository
+              <span className='align-middle'>repository</span>
             </a>
             )
           : (
             <button
               disabled
+              type='button'
               className='project-link bg-earth-yellow-light text-earth-brown-light brightness-50'
             >
               <GitHub color='inherit' fontSize='inherit' className='mr-2' />
-              repository
+              <span className='align-middle'>repository</span>
             </button>
             )}
         {demoLink !== undefined
@@ -66,16 +67,17 @@ const ProjectsCard: React.FC<{ type: string, name: string, src: string, descript
                         hover:bg-earth-brown-dark hover:text-earth-yellow-dark active:scale-95'
             >
               <OpenInNew color='inherit' fontSize='inherit' className='mr-2' />
-              live demo
+              <span className='align-middle'>live demo</span>
             </a>
             )
           : (
             <button
               disabled
+              type='button'
               className='project-link bg-earth-brown-light text-earth-yellow-light brightness-50'
             >
               <OpenInNew color='inherit' fontSize='inherit' className='mr-2' />
-              live demo
+              <span className='align-middle'>live demo</span>
             </button>
             )}
       </div>

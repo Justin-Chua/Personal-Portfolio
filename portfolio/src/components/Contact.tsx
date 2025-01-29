@@ -14,24 +14,23 @@ const Contact: React.FC = () => {
 
   return (
     <section id='contact' className='contact-wrapper'>
-      <div className='flex flex-col px-4 py-12 gap-y-10 items-center justify-center'>
+      <div className='flex flex-col px-4 py-12 gap-y-12 items-center justify-center'>
         <Header text='feel free to get in touch with me!' />
-        <div className='flex flex-row gap-48 items-center justify-center'>
-          <div
-            ref={ref}
-            className={`flex flex-col gap-10 items-center justify-center
-                        ${inView ? 'slide-y' : 'opacity-0 translate-y-[100px]'}`}
-          >
+        <div
+          ref={ref}
+          className='flex flex-row gap-48 items-center justify-center'
+        >
+          <div className={`${inView ? 'slide-y' : 'opacity-0 translate-y-[100px]'}`}>
             <a
               href='https://www.linkedin.com/in/justin-chua-86745b251/'
               target='_blank'
               rel='noopener noreferrer'
               className='contact-card'
             >
-              <LinkedIn color='inherit' fontSize='inherit' className='mr-6' />
-              <p className='contact-card-text'>
-                View my LinkedIn
-              </p>
+              <LinkedIn color='inherit' fontSize='inherit' />
+              <span className='contact-card-text'>
+                View My LinkedIn Profile
+              </span>
             </a>
             <a
               href='https://github.com/Justin-Chua'
@@ -39,24 +38,25 @@ const Contact: React.FC = () => {
               rel='noopener noreferrer'
               className='contact-card'
             >
-              <GitHub color='inherit' fontSize='inherit' className='mr-6' />
-              <p className='contact-card-text'>
-                View my GitHub
-              </p>
+              <GitHub color='inherit' fontSize='inherit' />
+              <span className='contact-card-text'>
+                View My GitHub Profile
+              </span>
             </a>
             <a
               href='mailto:justinkchua@gmail.com'
               className='contact-card'
             >
-              <Email color='inherit' fontSize='inherit' className='mr-6' />
-              <p className='contact-card-text'>
+              <Email color='inherit' fontSize='inherit' />
+              <span className='contact-card-text'>
                 justinkchua@gmail.com
-              </p>
+              </span>
             </a>
           </div>
           <Image
-            src='/resources/contact/botany.png' height={0} width={550} alt='botany'
+            src='/resources/contact/jolteon.gif' height={0} width={400} alt='jolteon (pokemon)'
             className='hidden xl:block'
+            unoptimized={true}
           />
         </div>
       </div>

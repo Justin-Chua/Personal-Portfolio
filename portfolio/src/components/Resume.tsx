@@ -54,7 +54,7 @@ const Resume: React.FC = () => {
                   {item.title}
                 </h2>
                 <h4 className='vertical-timeline-element-subtitle
-                                    font-poppins font-light italic text-earth-green'
+                                    font-poppins font-light text-earth-green'
                 >
                   {item.company}
                 </h4>
@@ -63,7 +63,7 @@ const Resume: React.FC = () => {
                 >
                   {item.location}
                 </h4>
-                <p>{item.description ?? ''}</p>
+                <p className='font-poppins text-earth-grey'>{item.description ?? ''}</p>
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>

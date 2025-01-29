@@ -29,59 +29,69 @@ const ABOUT_PATH = '/resources/about'
 
 export const aboutItems: aboutItem[] = [
   {
-    topic: 'programming',
+    topic: 'programming 💻',
     src: `${ABOUT_PATH}/programming.jpg`,
     description: `
-            My journey into programming began in my first year of university, 
-            with an intro course in Java that introduced me to fundamental programming concepts. 
-            Since then, I've had to the opportunity to complete my degree in Computer Science, and 
-            develop a strong interest in full-stack web development and data visualization. Discovering 
-            and mastering new programming concepts is what fuels my enthusiasm to continously grow as a developer!
+            My journey into programming started in my first year of university, 
+            with an intro course in Java that taught me the basics. I'll never forget the horrors of learning
+            recursion for the first time - wondering if I would ever get the hang of it.
+            Fast forward to today, and I'm officially a Computer Science graduate! Along the way, I
+            developing a strong interest in full-stack development - which I'm super excited to keep learning and building on.
             `
   },
   {
-    topic: 'family',
+    topic: 'family 👨‍👩‍👦‍👦',
     src: `${ABOUT_PATH}/family.jpg`,
     description: `
-            Nothing is more important to me than my family. 
-            I can say with confidence that I wouldn't be where I am today without their support. \
-            The compassion and wisdom they imparted to me growing up has shaped me in ways that continue \
-            to resonate through my daily actions. This influence is what drives me to be an excellent teammate \
-            in a professional setting, and treat my peers with the same level of respect and \
-            kindness that I receive from my own family.
+            Nothing is more important to me than my family, and it's no exaggeration to say that they've
+            shaped me into the person I am today. I feel incredibly blessed to be so close to them after 
+            all these years. The wisdom they've shared to me over the years still 
+            guides me in my daily life. Wherever I am, this influence is what drives me to pay forward 
+            the same level of respect and kindness that I've been fortunate enough to receive from them.
             `
   },
   {
-    topic: 'travelling',
+    topic: 'travelling ✈️',
     src: `${ABOUT_PATH}/zipline.jpg`,
     description: `
             I'm a lifelong learner by nature, which makes me a fanatic for 
-            travelling! It truly is a blessing to be able to learn about and embrace other cultures 
-            around the world. Whether it's participating in local festivities, visiting historical 
-            landmarks, or simply strolling through the city to admire the architecture. I enjoy discovering 
-            what the world has to offer and how we've progressed into modern society.
+            travelling! Whether it's participating in local festivities, visiting historical 
+            landmarks, or strolling through the city to admire the architecture. I love discovering 
+            what the world has to offer and how we've progressed into modern society. On that note, here's a picture
+            of me on a zipline during a family trip to Mexico last year - I promise I wasn't scared 😂.
             `
   },
   {
-    topic: 'nba fan',
+    topic: 'nba 🏀',
     src: `${ABOUT_PATH}/rockets.jpg`,
     description: `
-            I don't play basketball much myself, but I've always been an enthusiastic 
-            NBA fan. Besides the game, one aspect that's always stood out to me is the unique player 
-            and team statistics displayed throughout, along with the creative visualizations that accompany 
-            them. Also, for those curious, I'm a big time Houston Rockets fan. Hoping that Sengun is an 
-            All-Star this year and we make the play-in tournament!
+            I don't really play basketball that much, but I've always loved watching NBA games. 
+            Growing up as a Rockets fan in a family full of Lakers fans definitely wasn't easy 😅. 
+            But let's just say that this is one of the reasons that I developed such thick skin. 
+            The Rockets are looking good this year though, with Alpy as a candidate for the All-Star team. 
+            Hopefully we can make it past the first round in the playoffs. Go Rockets! 🚀
             `
   },
   {
-    topic: 'video games',
+    topic: 'video games 🎮',
     src: `${ABOUT_PATH}/witcher.jpg`,
     description: `
-            Video games have been a significant part of my life for as long as I can remember. 
-            My favorite genre is definitely single player, open-world RPGs that feature intricate world design, 
-            deep lore and complex puzzles. Some of my top picks include The Witcher 3, the Uncharted series 
-            and Horizon series. While I mostly play for enjoyment, I feel that video games also serve 
-            as a great outlet for honing my problem solving skills and fostering my natural curiosity.
+            Video games have been a part of my life for as long as I can remember. 
+            My favorite genre has to be single player, open-world RPGs with intricate world design, 
+            complex characters and a captivating story. Some of my top picks include The Witcher 3, 
+            Red Dead Redemption 2, the Uncharted series and Horizon series. More recently, I've
+            been playing a ton of Marvel Rivals with my friends. BEHOLD THE GOD OF THUNDER! ⚡️🔨
+            `
+  },
+  {
+    topic: 'typing ⌨️',
+    src: `${ABOUT_PATH}/typing.jpg`,
+    description: `
+            A fun fact about me is that I can type as fast as ~120WPM with punctuation. I randomly discovered that I
+            could do this years ago, but it's actually been a useful skill to have as a developer. It's helped me work 
+            efficiently when writing countless lines of code or documentation, so I'm pretty proud of it 😎.
+            If this whole software thing doesn't pan out, maybe I have a backup career as a professional
+            typist... just kidding.
             `
   }
 ]
