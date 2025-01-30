@@ -64,7 +64,7 @@ const About: React.FC = () => {
                 onClick={() => changeSlide('decrement')}
                 className='hover:brightness-50'
               >
-                <KeyboardArrowLeft color='inherit' fontSize='inherit' className='align-top' />
+                <KeyboardArrowLeft color='inherit' fontSize='inherit' className='block' />
               </button>
               {aboutItems.map((_, index) => (
                 <button 
@@ -80,7 +80,7 @@ const About: React.FC = () => {
                 onClick={() => changeSlide('increment')}
                 className='hover:brightness-50'
               >
-                <KeyboardArrowRight color='inherit' fontSize='inherit' className='align-top' />
+                <KeyboardArrowRight color='inherit' fontSize='inherit' className='block' />
               </button>
             </div>
           </div>
