@@ -39,7 +39,7 @@ const Home: React.FC = () => {
               href='#about'
               className='hover:brightness-50 text-earth-grey text-6xl'
             >
-              <KeyboardArrowDown color='inherit' fontSize='inherit' className='block align-middle animate-bounce' />
+              <KeyboardArrowDown color='inherit' fontSize='inherit' className='align-top animate-bounce' />
             </Link>
           </div>
         </div>
