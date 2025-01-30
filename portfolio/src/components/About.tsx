@@ -53,7 +53,7 @@ const About: React.FC = () => {
             >
               {aboutItems[slideIndex].topic}
             </h3>
-            <p className={`max-w-2xl font-poppins text-md md:text-lg leading-loose md:leading-loose font-normal text-wrap text-earth-grey 
+            <p className={`max-w-2xl font-poppins md:text-lg leading-loose md:leading-loose font-normal text-wrap text-earth-grey 
                             transition-fade ${fade ? 'opacity-0' : 'opacity-100'}`}
             >
               {aboutItems[slideIndex].description}
@@ -64,7 +64,7 @@ const About: React.FC = () => {
                 onClick={() => changeSlide('decrement')}
                 className='hover:brightness-50'
               >
-                <KeyboardArrowLeft color='inherit' fontSize='inherit' className='block' />
+                <KeyboardArrowLeft color='inherit' fontSize='inherit' className='align-top' />
               </button>
               {aboutItems.map((_, index) => (
                 <button 
@@ -80,7 +80,7 @@ const About: React.FC = () => {
                 onClick={() => changeSlide('increment')}
                 className='hover:brightness-50'
               >
-                <KeyboardArrowRight color='inherit' fontSize='inherit' className='block' />
+                <KeyboardArrowRight color='inherit' fontSize='inherit' className='align-top' />
               </button>
             </div>
           </div>
