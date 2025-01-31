@@ -229,7 +229,8 @@ export const projectItems: projectItem[] = [
       'Express.js',
       'ChakraUI',
       'Git',
-      'MongoDB'
+      'MongoDB',
+      'Docker'
     ]
   },
   {
