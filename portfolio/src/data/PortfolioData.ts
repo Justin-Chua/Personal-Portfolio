@@ -1,8 +1,9 @@
 export const introduction: string = `
-    Thanks for checking out my website!  
-    I'm a recent Computer Science graduate from the University of Calgary,  
-    with a strong passion for and expertise in developing full-stack web applications. 
-    To find out more about me, feel free to keep scrolling down!
+    Thanks for checking out my portfolio!  
+    I'm a Computer Science grad from the University of Calgary,  
+    with a solid background in full-stack development and data analysis.
+    Right now, I'm working as a Data Engineer for OPIS.
+    Feel free to keep scrolling if you want to learn more!
     `
 
 interface navItem {
@@ -156,6 +157,13 @@ interface resumeItem {
 
 export const resumeItems: resumeItem[] = [
   {
+    type: 'work',
+    title: 'Data Engineer',
+    company: 'OPIS, A Dow Jones Company',
+    location: 'Toronto, ON - Remote',
+    date: 'April 2025 - Present'
+  },
+  {
     type: 'education',
     title: 'Bachelor of Science in Computer Science',
     company: 'University of Calgary',
@@ -297,21 +305,21 @@ export const projectItems: projectItem[] = [
       'Git'
     ]
   },
-  {
-    type: 'front end web application (in progress)',
-    name: 'genrefy',
-    src: `${PROJECT_PATH}/genrefy.png`,
-    description: `
-            A simple web application that tags each song in a Spotify playlist entered by the user
-            with appropriate genres. This intuitive tool enables users to categorize their music,
-            filter songs by genre, and create tailored, genre-specific playlists.
-          `,
-    tags: [
-      'TypeScript',
-      'Next.js',
-      'NextUI',
-      'Tailwind CSS',
-      'Git'
-    ]
-  }
+  // {
+  //   type: 'front end web application (in progress)',
+  //   name: 'genrefy',
+  //   src: `${PROJECT_PATH}/genrefy.png`,
+  //   description: `
+  //           A simple web application that tags each song in a Spotify playlist entered by the user
+  //           with appropriate genres. This intuitive tool enables users to categorize their music,
+  //           filter songs by genre, and create tailored, genre-specific playlists.
+  //         `,
+  //   tags: [
+  //     'TypeScript',
+  //     'Next.js',
+  //     'NextUI',
+  //     'Tailwind CSS',
+  //     'Git'
+  //   ]
+  // }
 ]
